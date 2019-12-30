@@ -179,6 +179,8 @@ class MenuDetails extends Component{
 
     render(){
         const{name,address} = this.state;
+        const itm = this.state.items.filter((itm)=>!!itm.count)
+        console.log(itm);
         return(
                 <div className="conatiner">
                     <div className="container jumbotron head">
@@ -196,9 +198,9 @@ class MenuDetails extends Component{
                         </div>
                         <MenuModalDialog isOpen={this.state.modalState} isClose={this.handleClose} AddItm={this.AddItm} />
                     </div>
-
+                    {itm[0]==null?null:
                     <button onClick={() => {this.setState({ordermodal:true})}} className="btn btn-success btn-sm ord">ORDER NOW</button>
-                    <OrderModalDialog isOpen={this.state.ordermodal} items={this.state.items} pay={this.placeOrder} isClose={this.handleClose}/>
+                    }<OrderModalDialog isOpen={this.state.ordermodal} items={this.state.items} pay={this.placeOrder} isClose={this.handleClose}/>
                     </div>
         )
     }
