@@ -1,0 +1,49 @@
+.outerdiv{
+    padding: 2%;
+
+}
+.head1{
+    text-align: center;
+    color:black;
+    background-color: burlywood;
+}
+.inner{
+    padding: 8%;
+
+    background:linear-gradient(to right,grey,white);	
+    border-radius:10px;
+    box-shadow:5px 5px 10px grey;
+    color: black;
+}
+
+.rowpadd{
+    padding: 3%;
+}
+.b{
+    font-style: italic;
+    font-weight: bold;
+    margin-left: 80%;
+    
+}
+
+.hea2{
+    background-color: bisque;
+}
+
+.gly{
+    margin-left: 50%;
+    margin-top:-15% ;
+    background-color:darkgray;
+    color: black;
+    font-weight: bold;
+}
+
+.adm{
+    margin-left: 80%;
+    margin-top: -15%;
+}
+
+.usr{
+    margin-top: -15%;
+    margin-left: 5%;
+}

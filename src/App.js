@@ -1,24 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MenuDetails from './component/MenuDetails.jsx' ;
+import Listrest from './component/Listrest';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
+
+/**
+ * 1. history.push(/:id) -> fetch data from location.
+ * 2. history.push(/:id,state:{secretKey:"kjfhkjh"}) -> fetch data from location.
+ */
 
 function App() {
+ 
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+   
+    <div>
+     {/* <Listrest/> */}
+      <Router>
+        <Switch>
+          <Route path='/' exact component={Listrest}/>
+          <Route path='/:id/items' exact component={MenuDetails}/>
+        </Switch>
+      </Router>
     </div>
   );
 }

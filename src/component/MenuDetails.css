@@ -1,0 +1,34 @@
+.inner1{
+    background:linear-gradient(to right,lightgreen,lightblue);	
+    border-radius:10px;
+    padding:10px;
+    box-shadow:5px 5px 10px grey;
+}
+
+.head{
+    background-color:rosybrown;
+   
+    
+}
+
+.list{
+    padding: 2%;
+}
+
+.bt{
+    margin-left: 70%;
+    margin-top: -20%;
+}
+
+.glyc{
+    background-color: teal;
+    margin-left: 70%;
+   margin-top: 2%;
+    margin-right: 5%;
+    color: white;
+}
+
+.ord{
+    margin-left: 80%;
+}
+
