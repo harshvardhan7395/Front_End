@@ -138,6 +138,10 @@ class MenuDetails extends Component{
         this.setState({items:items});
     }
 
+    goBack = () =>{
+        this.props.history.goBack();
+    }
+
     //populate the list of items for the particular restaurant.
     populate_items = () => {
             const{items} = this.state;
@@ -184,10 +188,11 @@ class MenuDetails extends Component{
         return(
                 <div className="conatiner">
                     <div className="container jumbotron head">
-                        <div className="col-sm-6  ">
+                        <div className="col-sm-3 ">
                             <h3>Restaurant Name:    {name}</h3>
                             <h4>Address:    {address}</h4>
                         </div>
+                        <button onClick={()=>{this.goBack()}} className="btn btn-danger">Back</button>
                         {this.props.history.location.state.flag?<button onClick={() => {this.setState({modalState:true})}} className="btn btn-warning b">+ Add Items</button>
                     :null}
                         </div>
