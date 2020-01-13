@@ -40,10 +40,22 @@
 
 .adm{
     margin-left: 80%;
-    margin-top: -15%;
+    margin-top: -10%;
 }
 
 .usr{
-    margin-top: -15%;
-    margin-left: 5%;
+    margin-top: -5%;
+    margin-left: 80%;
+    background-color: thistle;
+    color: black;
+    font-weight: bold;
+}
+
+.pg{
+    text-align: center;
+}
+
+.sp{
+    color: black;
+    font-weight: bold;
 }
