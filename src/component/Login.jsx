@@ -31,6 +31,8 @@ class Login extends Component{
 
         axios.post('users/login/',jobj,{headers:{'Content-Type':'application/json'}}).then((response) =>{
             const {data} = response;
+            console.log("Response Object : ");
+            console.log(response);
             console.log(data.toLowerCase());
             localStorage.setItem('flag',data.toLowerCase());
             this.props.history.push('/logedIn/');
